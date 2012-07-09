@@ -1,8 +1,0 @@
-namespace :photos do 
-  task :import => [:environment] do |t, args|
-    path = args[0]
-    tags = args[1..-1]
-    
-    Photo.import_directory(path
-  end
-end

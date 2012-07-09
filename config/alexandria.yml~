@@ -1,8 +1,0 @@
-test: 
-  base_path: tmp/photos
-
-development:
-  base_path: /data/photos
-
-production:
-  base_path: /data/photos

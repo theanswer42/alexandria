@@ -1,8 +1,0 @@
-class CreateRolls < ActiveRecord::Migration
-  def change
-    create_table :rolls do |t|
-
-      t.timestamps
-    end
-  end
-end
