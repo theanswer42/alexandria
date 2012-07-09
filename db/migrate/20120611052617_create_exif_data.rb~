@@ -1,0 +1,8 @@
+class CreateExifData < ActiveRecord::Migration
+  def change
+    create_table :exif_data do |t|
+
+      t.timestamps
+    end
+  end
+end

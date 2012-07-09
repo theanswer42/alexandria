@@ -1,0 +1,4 @@
+require 'fileutils'
+require 'optparse'
+
+opt_parser = OptionParser

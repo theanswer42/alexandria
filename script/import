@@ -1,0 +1,26 @@
+require 'optparse'
+args, options = ARGV.dup, {}
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: import -p [path] -a [album-name] tags"
+  opts.on("-p", "--path=path", String,
+          "import photos from the specified path") { |v| options[:path] = v }
+  opts.on("-a", "--album=name", String,
+          "Use the specified album-name.") { |v| options[:album_name] = v }
+  
+  opts.separator ""
+  opts.on("-h", "--help", "Show this help message.") { puts opts; exit }
+
+end
+
+opt_parser.parse! args
+
+path = options[:path]
+
+raise "Must specify valid path" if !File.directory?(path)
+
+tags = args
+
+result = Photo.import_directory(path, tags, :album_name => options[:album_name])
+puts result.inspect
+

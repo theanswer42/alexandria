@@ -1,0 +1,703 @@
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/photo_test.rb:1:in `<main>'
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (20.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'alexandria_test.rolls' doesn't exist: SHOW FULL FIELDS FROM `rolls`
+  [1m[35m (18.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (14.5ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:02:28', '2012-07-09 00:02:28', 52322549)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:02:28', '2012-07-09 00:02:28', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:02:28', '2012-07-09 00:02:28', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:02:28', '2012-07-09 00:02:28', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:02:28', '2012-07-09 00:02:28', 298486374)
+  [1m[36m (27.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (17.7ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (18.5ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:16:14', '2012-07-09 00:16:14', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:16:14', '2012-07-09 00:16:14', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:16:14', '2012-07-09 00:16:14', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (16.6ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:16:14', '2012-07-09 00:16:14', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:16:14', '2012-07-09 00:16:14', 298486374)
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (22.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.5ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:19:37', '2012-07-09 00:19:37', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:19:37', '2012-07-09 00:19:37', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:19:37', '2012-07-09 00:19:37', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (8.0ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:19:37', '2012-07-09 00:19:37', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:19:37', '2012-07-09 00:19:37', 298486374)
+  [1m[36m (43.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.3ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:21:16', '2012-07-09 00:21:16', 52322549)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:21:16', '2012-07-09 00:21:16', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:21:16', '2012-07-09 00:21:16', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (10.4ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:21:16', '2012-07-09 00:21:16', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:21:16', '2012-07-09 00:21:16', 298486374)
+  [1m[36m (35.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.1ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.1ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:40:28', '2012-07-09 00:40:28', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:40:28', '2012-07-09 00:40:28', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:40:28', '2012-07-09 00:40:28', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (12.1ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:40:28', '2012-07-09 00:40:28', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:40:28', '2012-07-09 00:40:28', 298486374)
+  [1m[36m (35.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_add(started_at, interval 1 day) and date_sub(finished_at, interval 1 day)) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mRoll Exists (0.4ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.1ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.2ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.1ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (12.6ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:42:09', '2012-07-09 00:42:09', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:42:09', '2012-07-09 00:42:09', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:42:09', '2012-07-09 00:42:09', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (17.7ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:42:09', '2012-07-09 00:42:09', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:42:09', '2012-07-09 00:42:09', 298486374)
+  [1m[36m (37.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRoll Exists (0.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRoll Load (15.8ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.1ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.9ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:45:48', '2012-07-09 00:45:48', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:45:48', '2012-07-09 00:45:48', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:45:48', '2012-07-09 00:45:48', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (12.8ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:45:48', '2012-07-09 00:45:48', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:45:48', '2012-07-09 00:45:48', 298486374)
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35m (15.0ms)[0m  SELECT COUNT(*) FROM `rolls` 
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mRoll Exists (0.4ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36mRoll Exists (0.2ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (20.1ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:47:32', '2012-07-09 00:47:32', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:47:32', '2012-07-09 00:47:32', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:47:32', '2012-07-09 00:47:32', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (14.1ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:47:32', '2012-07-09 00:47:32', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:47:32', '2012-07-09 00:47:32', 298486374)
+  [1m[36m (46.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1
+  [1m[36mRoll Load (0.4ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRoll Exists (0.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `rolls` 
+  [1m[36mRoll Load (0.4ms)[0m  [1mSELECT `rolls`.* FROM `rolls` LIMIT 1[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` LIMIT 1
+  [1m[36mRoll Load (0.4ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (11.6ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:55:54', '2012-07-09 00:55:54', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:55:54', '2012-07-09 00:55:54', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:55:54', '2012-07-09 00:55:54', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:55:54', '2012-07-09 00:55:54', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:55:54', '2012-07-09 00:55:54', 298486374)
+  [1m[36m (38.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `rolls` (`created_at`, `finished_at`, `name`, `started_at`, `updated_at`) VALUES ('2012-07-09 00:55:54', '2012-07-10 00:00:00', 'Roll 52322550', '2012-07-10 00:00:00', '2012-07-09 00:55:54')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (22.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.2ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-03 00:55:54' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-04 00:55:54' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-05 00:55:54' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-04 00:55:54' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mRoll Exists (0.0ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-08 07:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36mRoll Exists (0.1ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-08 07:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-01 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/roll_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.2ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 00:58:42', '2012-07-09 00:58:42', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:58:42', '2012-07-09 00:58:42', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:58:42', '2012-07-09 00:58:42', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (12.4ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:58:42', '2012-07-09 00:58:42', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 00:58:42', '2012-07-09 00:58:42', 298486374)
+  [1m[36m (31.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.1ms)[0m  SELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRoll Exists (0.4ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-10 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mSQL (10.4ms)[0m  INSERT INTO `rolls` (`created_at`, `finished_at`, `name`, `started_at`, `updated_at`) VALUES ('2012-07-09 00:58:42', '2012-07-10 00:00:00', 'Roll 52322550', '2012-07-10 00:00:00', '2012-07-09 00:58:42')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (21.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE `rolls`.`id` = 52322549 LIMIT 1
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 2' LIMIT 1[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 1' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-03 00:58:42' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-04 00:58:42' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36mRoll Exists (0.3ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-05 00:58:42' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-04 00:58:42' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mRoll Exists (0.2ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-08 07:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36mRoll Exists (0.2ms)[0m  [1mSELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-08 07:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35mRoll Exists (0.1ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 4' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-07-01 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-07-07 18:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/photo_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.1ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 01:42:30', '2012-07-09 01:42:30', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:30', '2012-07-09 01:42:30', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:30', '2012-07-09 01:42:30', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (9.1ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:30', '2012-07-09 01:42:30', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:30', '2012-07-09 01:42:30', 298486374)
+  [1m[36m (37.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Exists (0.4ms)[0m  SELECT 1 FROM `photos` WHERE `photos`.`checksum` = BINARY 'b' LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 01:42:30', 'dlkjf', 'a', NULL, 'sdfkj', 52322549, NULL, '2012-07-07 00:00:00', '2012-07-09 01:42:30')[0m
+Mysql2::Error: Column 'imported_at' cannot be null: INSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 01:42:30', 'dlkjf', 'a', NULL, 'sdfkj', 52322549, NULL, '2012-07-07 00:00:00', '2012-07-09 01:42:30')
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/photo_test.rb:1:in `<main>'
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (14.5ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 01:42:52', '2012-07-09 01:42:52', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:52', '2012-07-09 01:42:52', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:52', '2012-07-09 01:42:52', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (12.1ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:52', '2012-07-09 01:42:52', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:42:52', '2012-07-09 01:42:52', 298486374)
+  [1m[36m (23.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Exists (0.4ms)[0m  SELECT 1 FROM `photos` WHERE `photos`.`checksum` = BINARY 'b' LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 01:42:52', 'dlkjf', 'a', 1341798172, 'sdfkj', 52322549, NULL, '2012-07-07 00:00:00', '2012-07-09 01:42:52')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (23.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/photo_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (23.4ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 01:43:33', '2012-07-09 01:43:33', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:43:33', '2012-07-09 01:43:33', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:43:33', '2012-07-09 01:43:33', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:43:33', '2012-07-09 01:43:33', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 01:43:33', '2012-07-09 01:43:33', 298486374)
+  [1m[36m (34.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Exists (0.4ms)[0m  SELECT 1 FROM `photos` WHERE `photos`.`checksum` = BINARY 'b' LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (0.4ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mSQL (16.6ms)[0m  [1mINSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 01:43:33', 'dlkjf', 'a', 1341798213, 'sdfkj', 52322549, NULL, '2012-07-07 00:00:00', '2012-07-09 01:43:33')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (19.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Unable to load exif_datum, underlying cause No such file to load -- exif_datum 
+
+ /home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:312:in `depend_on'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activesupport-3.2.5/lib/active_support/dependencies.rb:225:in `require_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `each'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/home/sagar/.rvm/gems/ruby-1.9.2-p290@alexandria/gems/activerecord-3.2.5/lib/active_record/fixtures.rb:762:in `fixtures'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sagar/source/atlantis/alexandria/test/test_helper.rb:5:in `<top (required)>'
+<internal:lib/rubygems/custom_require>:29:in `require'
+<internal:lib/rubygems/custom_require>:29:in `require'
+test/unit/photo_test.rb:1:in `<main>'
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (16.9ms)[0m  DELETE FROM `rolls`
+  [1m[36mFixture Insert (21.5ms)[0m  [1mINSERT INTO `rolls` (`name`, `started_at`, `finished_at`, `created_at`, `updated_at`, `id`) VALUES ('Roll 1', '2012-07-06 00:00:00', '2012-07-08 00:00:00', '2012-07-09 02:02:52', '2012-07-09 02:02:52', 52322549)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `photos`
+  [1m[36mFixture Insert (10.9ms)[0m  [1mINSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 02:02:52', '2012-07-09 02:02:52', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `photos` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 02:02:52', '2012-07-09 02:02:52', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `exif_data`[0m
+  [1m[35mFixture Insert (15.0ms)[0m  INSERT INTO `exif_data` () VALUES ()
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `exif_data` () VALUES ()[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `albums`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 02:02:52', '2012-07-09 02:02:52', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `albums` (`created_at`, `updated_at`, `id`) VALUES ('2012-07-09 02:02:52', '2012-07-09 02:02:52', 298486374)
+  [1m[36m (82.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mRoll Load (0.3ms)[0m  SELECT `rolls`.* FROM `rolls` LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Exists (2.2ms)[0m  SELECT 1 FROM `photos` WHERE `photos`.`checksum` = BINARY 'b' LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1[0m
+  [1m[35mRoll Load (1.5ms)[0m  SELECT `rolls`.* FROM `rolls` WHERE ('2012-07-07 00:00:00' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1
+  [1m[36mSQL (11.6ms)[0m  [1mINSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 02:02:52', 'dlkjf', 'a', 1341799372, 'sdfkj', 52322549, NULL, '2012-07-07 00:00:00', '2012-07-09 02:02:52')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (19.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRoll Load (0.2ms)[0m  [1mSELECT `rolls`.* FROM `rolls` LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPhoto Exists (0.4ms)[0m  [1mSELECT 1 FROM `photos` WHERE `photos`.`checksum` = BINARY 'b' LIMIT 1[0m
+  [1m[35mRoll Load (0.2ms)[0m  SELECT `rolls`.* FROM `rolls` ORDER BY `rolls`.`id` DESC LIMIT 1
+  [1m[36mRoll Load (0.3ms)[0m  [1mSELECT `rolls`.* FROM `rolls` WHERE ('2012-06-29 02:02:52' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day)) LIMIT 1[0m
+  [1m[35mRoll Exists (0.3ms)[0m  SELECT 1 FROM `rolls` WHERE `rolls`.`name` = BINARY 'Roll 52322550' LIMIT 1
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM `rolls` WHERE ('2012-06-29 02:02:52' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `rolls` WHERE ('2012-06-29 02:02:52' between date_sub(started_at, interval 1 day) and date_add(finished_at, interval 1 day))
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `rolls` (`created_at`, `finished_at`, `name`, `started_at`, `updated_at`) VALUES ('2012-07-09 02:02:52', '2012-06-29 02:02:52', 'Roll 52322550', '2012-06-29 02:02:52', '2012-07-09 02:02:52')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `photos` (`album_id`, `checksum`, `created_at`, `description`, `filename`, `imported_at`, `name`, `roll_id`, `thumbnail`, `timestamp`, `updated_at`) VALUES (NULL, 'b', '2012-07-09 02:02:52', 'dlkjf', 'a', 1341799372, 'sdfkj', 52322552, NULL, '2012-06-29 02:02:52', '2012-07-09 02:02:52')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (23.9ms)[0m  ROLLBACK
