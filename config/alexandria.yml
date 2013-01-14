@@ -2,7 +2,7 @@ test:
   base_path: tmp/photos
 
 development:
-  base_path: /data/photos
+  base_path: /data/alexandria
 
 production:
-  base_path: /data/photos
+  base_path: /volumes/alexandria/alexandria

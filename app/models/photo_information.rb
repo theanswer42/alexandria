@@ -1,5 +1,4 @@
 class PhotoInformation < ActiveRecord::Base
-  # attr_accessible :title, :body
   belongs_to :photo
   belongs_to :roll
 
@@ -31,7 +30,7 @@ class PhotoInformation < ActiveRecord::Base
       self.roll.update_attributes!(:started_at => self.photo.timestamp)
     elsif self.photo.timestamp > self.roll.finished_at
       self.roll.update_attributes!(:finished_at => self.photo.timestamp)
-    end
+    end    
   end
 
 end

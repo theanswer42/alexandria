@@ -27,7 +27,7 @@ class Document < ActiveRecord::Base
     
     checksum = sha1sum.to_s
     if (document = Document.find_by_checksum(checksum))
-      result[:skipped] += 1
+      result[:skipped] << path
       Rails.logger.info("#{path} skipped, file already exists: #{document.library_filename}")
       return
     end
@@ -54,16 +54,19 @@ class Document < ActiveRecord::Base
     end
   end
 
-  def self.import_directory(path, tags, options)
-    result = {:errors => 0, :total => 0, :skipped => [], :duplicates => [], :album_created => false, :album_used => nil}
+  def self.import_directory(path, tags, options={})
+    result = {:errors => 0, :total => 0, :skipped => [], :duplicates => []}
     
-    Dir.glob(File.join(path, "**", "*")) do |name|
-      path_tags = File.dirname(name)[path.length..-1].split("/").select {|n| !n.blank? }
+    Dir.glob(File.join(path, "**", "*")).each do |name|
+      next unless File.file?(name)
+      relative_path = File.dirname(name)[path.length..-1] || ""
+      path_tags = relative_path.split("/").select {|n| !n.blank? }
       image_tags = (tags + path_tags).collect {|t| t.downcase }.uniq
 
       result[:total] += 1
-      self.import!(name, image_tags, options)
+      self.import!(name, image_tags, options.merge(:result => result))
     end
+    result
   end
   
   def library_filename

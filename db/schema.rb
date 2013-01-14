@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120706063751) do
+ActiveRecord::Schema.define(:version => 20121219063823) do
 
   create_table "albums", :force => true do |t|
     t.string   "name",       :null => false
@@ -19,28 +19,28 @@ ActiveRecord::Schema.define(:version => 20120706063751) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "exif_data", :force => true do |t|
-    t.integer  "photo_id",   :null => false
+  create_table "documents", :force => true do |t|
+    t.string   "type",        :limit => 32,   :default => "Document", :null => false
+    t.string   "filename",    :limit => 2048,                         :null => false
+    t.string   "checksum",    :limit => 1024,                         :null => false
+    t.string   "name",        :limit => 1024
+    t.string   "description", :limit => 4096
+    t.datetime "timestamp",                                           :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  add_index "documents", ["checksum"], :name => "index_documents_on_checksum", :length => {"checksum"=>767}
+
+  create_table "photo_informations", :force => true do |t|
+    t.integer  "photo_id"
+    t.binary   "thumbnail"
+    t.integer  "roll_id",    :null => false
+    t.integer  "album_id"
     t.text     "exif_data"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
-  create_table "photos", :force => true do |t|
-    t.string   "filename",    :limit => 2048, :null => false
-    t.binary   "thumbnail"
-    t.string   "checksum",    :limit => 1024, :null => false
-    t.string   "name",        :limit => 1024
-    t.string   "description", :limit => 4096
-    t.datetime "timestamp",                   :null => false
-    t.integer  "imported_at",                 :null => false
-    t.integer  "roll_id",                     :null => false
-    t.integer  "album_id"
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
-  end
-
-  add_index "photos", ["checksum"], :name => "index_photos_on_checksum", :length => {"checksum"=>767}
 
   create_table "rolls", :force => true do |t|
     t.string   "name",        :limit => 256, :null => false

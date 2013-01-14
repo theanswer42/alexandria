@@ -26,6 +26,22 @@ class DocumentTest < ActiveSupport::TestCase
   end
 
   def test_import_directory
+    directory = Rails.root.join('test', 'files', 'tag1').to_s
+    result = {}
+    result = Document.import_directory(directory, ['tag55'])
+    assert_equal 1, result[:total]
+    assert_equal 0, result[:errors]
+    assert_equal 0, result[:skipped].length
+    imported_document = Document.last
     
+    assert_equal 'DSC_0003', imported_document.name
+    assert_equal ['tag55', 'tag2'].sort, imported_document.tag_list.sort
+    
+    result = {}
+    result = Document.import_directory(directory, ['tag55'])
+    assert_equal 1, result[:total]
+    assert_equal 0, result[:errors]
+    assert_equal 1, result[:skipped].length
+    assert_equal 1, Document.count
   end
 end

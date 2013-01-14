@@ -1,6 +1,6 @@
 namespace :photos do 
   task :import, [:path, :tags] => [:environment] do |t, args|
-    puts args
+    puts args.inspect
     # path = args[0]
     # tags = args[1..-1]
     
