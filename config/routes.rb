@@ -1,4 +1,8 @@
 Alexandria::Application.routes.draw do
+  resources :documents, :only => [:show, :index]
+  match '/documents(/:year(/:month))' => 'documents#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

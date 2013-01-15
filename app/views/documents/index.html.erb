@@ -1,0 +1,10 @@
+<div id='doc_idx'>
+    <%= render :partial => 'left_nav' %>
+    <div id='doc_list'>
+        <%= render :partial => 'document_preview', :collection => @documents %>
+        
+        <div class='pagination'>
+            <%= will_paginate @documents %>
+        </div>
+    </div>
+</div>

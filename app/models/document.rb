@@ -6,6 +6,14 @@ class Document < ActiveRecord::Base
   
   attr_accessible :filename, :thumbnail, :checksum, :name, :description, :timestamp, :imported_at
   
+  def self.available_years
+    self.select("distinct year(timestamp) as year_timestamp").collect {|d| d.year_timestamp }
+  end
+
+  def self.available_months(year)
+    self.where(["year(timestamp) = ?", year]).select("distinct month(timestamp) as month_timestamp").collect {|d| d.month_timestamp }
+  end
+
   def self.type_for(path)
     extension = File.extname(path).downcase
     {".jpg" => Photo,

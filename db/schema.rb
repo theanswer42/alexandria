@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219063823) do
+ActiveRecord::Schema.define(:version => 20130115095000) do
 
   create_table "albums", :force => true do |t|
     t.string   "name",       :null => false
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20121219063823) do
   end
 
   add_index "documents", ["checksum"], :name => "index_documents_on_checksum", :length => {"checksum"=>767}
+  add_index "documents", ["timestamp"], :name => "index_documents_on_timestamp"
 
   create_table "photo_informations", :force => true do |t|
     t.integer  "photo_id"

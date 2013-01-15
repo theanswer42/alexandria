@@ -48,3 +48,6 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 
 # thin
 gem 'thin'
+
+gem 'will_paginate'
+
