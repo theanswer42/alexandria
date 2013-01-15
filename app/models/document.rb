@@ -27,7 +27,7 @@ class Document < ActiveRecord::Base
     
     checksum = sha1sum.to_s
     if (document = Document.find_by_checksum(checksum))
-      result[:skipped] << path
+      result[:skipped] += 1
       Rails.logger.info("#{path} skipped, file already exists: #{document.library_filename}")
       return
     end
@@ -55,7 +55,7 @@ class Document < ActiveRecord::Base
   end
 
   def self.import_directory(path, tags, options={})
-    result = {:errors => 0, :total => 0, :skipped => [], :duplicates => []}
+    result = {:errors => 0, :total => 0, :skipped => 0}
     
     Dir.glob(File.join(path, "**", "*")).each do |name|
       next unless File.file?(name)
