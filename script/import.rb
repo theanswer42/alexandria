@@ -5,8 +5,7 @@ tags = ARGV[1..-1] || []
 # puts tags.inspect
 
 unless File.directory?(path)
-  puts "path: #{path} is not a directory"
-  return 1
+  raise "path: #{path} is not a directory"
 end
 
 result = Document.import_directory(path, tags)
