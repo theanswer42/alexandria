@@ -36,4 +36,4 @@ production:
   username: railsuser
   password: railspwd
   host: localhost
-  socket: /run/mysqld/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock

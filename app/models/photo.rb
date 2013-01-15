@@ -10,7 +10,8 @@ class Photo < Document
     
     if exif_data.exif?
       exif_data = exif_data.to_hash
-      timestamp = exif_data[:date_time]
+      timestamp = exif_data[:date_time] || exif_data[:date_time_original] || exif_data[:date_time_digitized]
+      timestamp = File.mtime(filename) if timestamp.blank?
     else
       timestamp = File.mtime(filename)
     end

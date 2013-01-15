@@ -13,7 +13,7 @@ class Document < ActiveRecord::Base
   end
 
   def self.timestamp_for(path)
-    timestamp = File.mtime(filename)
+    timestamp = File.mtime(path)
   end
 
   def self.import!(path, tags, options)
