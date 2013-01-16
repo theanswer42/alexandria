@@ -12,12 +12,15 @@ class PhotoInformation < ActiveRecord::Base
   
   private
   def extract_exif_info
-    data = EXIFR::JPEG.new(self.photo.library_filename)
+    self.exif_data = {}
+    begin
+      data = EXIFR::JPEG.new(self.photo.library_filename)
     
-    if data.exif?
-      self.exif_data = data.to_hash
-    else
-      self.exif_data = {}
+      if data.exif?
+        self.exif_data = data.to_hash
+      end
+    rescue Exception => e
+      Rails.logger.error "could not read exif data from: #{self.photo.library_filename}"
     end
   end
   

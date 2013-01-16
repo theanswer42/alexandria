@@ -6,15 +6,18 @@ class Photo < Document
   belongs_to :album
 
   def self.timestamp_for(path)
-    exif_data = EXIFR::JPEG.new(path)
-    
-    if exif_data.exif?
-      exif_data = exif_data.to_hash
-      timestamp = exif_data[:date_time] || exif_data[:date_time_original] || exif_data[:date_time_digitized]
-      timestamp = File.mtime(path) if timestamp.blank?
-    else
-      timestamp = File.mtime(path)
+    timestamp = nil
+    begin
+      exif_data = EXIFR::JPEG.new(path)
+      if exif_data.exif?
+        exif_data = exif_data.to_hash
+        timestamp = exif_data[:date_time] || exif_data[:date_time_original] || exif_data[:date_time_digitized]
+      end
+    rescue Exception => e
+      Rails.logger.error "could not read exif data from: #{path}"
+      timestamp = nil
     end
+    timestamp = File.mtime(path) if timestamp.blank?
     timestamp
   end
 
