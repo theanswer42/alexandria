@@ -1,10 +1,18 @@
 <div id='doc_idx'>
+    
     <%= render :partial => 'left_nav' %>
-    <div id='doc_list'>
+    
+    <div id='doc_list' class='list_view page_middle'>
+        <div class='labels'>
+            <div class='label name'>Name</div>
+            <div class='label type'>Type</div>
+            <div class='label timestamp'>Timestamp</div>
+            <div class='label tags'>Tags</div>
+            <div style='clear:both;'></div>
+        </div>
+        
         <%= render :partial => 'document_preview', :collection => @documents %>
         
-        <div class='pagination'>
-            <%= will_paginate @documents %>
-        </div>
+        <%= will_paginate @documents %>
     </div>
 </div>

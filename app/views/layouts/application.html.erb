@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Alexandria</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <head>
+        <title>The Alexandria Project</title>
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <div class='head'>
+            The Alexandria Project
+        </div>
+        
+        <div class='universe'>
+            
+            <%= yield %>
+            
+            <div style='clear:both'></div>
+        </div>
+        
+    </body>
+    
 </html>

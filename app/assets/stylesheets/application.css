@@ -11,3 +11,33 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+    width: 1024px;
+    font-family: Arial;
+    color: #333333;
+    font-size: 13px;
+}
+.head {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #999999;
+}
+.universe .page_left {
+    width: 160px;
+    float: left;
+}
+.universe .page_middle {
+    width: 844px;
+    float: left;
+    padding-left: 20px;
+}
+.universe .pagination {
+    padding: 10px;
+    float: right;
+}
+a:link, a:visited {
+    color: #5555bb;
+}

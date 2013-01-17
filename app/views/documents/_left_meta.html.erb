@@ -1,0 +1,9 @@
+<div class = 'left_meta page_left'>
+    <div class='name'><%=document.name%></div>
+    <div class='timestamp'><%=document.timestamp%></div>
+    <div class='tags'><%=document.tag_list%></div>
+    
+    <% if document.is_a?(Photo) %>
+        <%= render :partial => 'photo_information', :locals => {:photo => document} %>
+    <% end %>
+</div>

@@ -1,5 +1,20 @@
-<div id='left_nav'>
+<div class='left_nav page_left'>
     <% @available_years.each do |year| %>
-        <%= year %>
+        <% if @year && @year == year %>
+            <div class='selected year'>
+                <%= year %>
+                <% @available_months.each do |month| %>
+                    <% if @month && @month == month %>
+                        <div class='selected month'><%= month %></div>
+                    <% else %>
+                        <div class='month'><%= link_to(month, documents_path(:year => year, :month => month)) %></div>
+                    <% end %>
+                <% end %>
+            </div>
+        <% else %>
+            <div class='year'>
+                <%= link_to(year, documents_path(:year => year)) %>
+            </div>
+        <% end %>
     <% end %>
 </div>

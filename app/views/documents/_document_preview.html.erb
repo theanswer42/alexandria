@@ -1,4 +1,7 @@
 <div class='document_preview'>
-    Document: <%=document_preview.name%>, <%=document_preview.timestamp%>
-    
+    <div class='attr name'><%=link_to(document_preview.name, document_path(document_preview))%></div>
+    <div class='attr type'>(<%=document_preview.type%>)</div>
+    <div class='attr timestamp'><%=document_preview.timestamp.to_s(:db)%></div>
+    <div class='attr tags'><%=document_preview.tag_list.join(",") %></div>
+    <div style='clear:both;'></div>
 </div>

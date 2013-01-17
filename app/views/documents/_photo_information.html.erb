@@ -1,0 +1,11 @@
+<% if !photo.photo_information.exif_data.blank? %>
+    <div class='photo_information'>
+
+        <% photo.photo_information.exif_data.each do |key,value| %>
+            <% value = value.to_i if key==:orientation %>
+            <div class='exif_attr'>
+                <span class='label'><%=key%>: </span><span class='value'><%=value.to_s%></span>
+            </div>
+        <% end %>
+    </div>
+<% end %>

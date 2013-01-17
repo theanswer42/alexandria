@@ -1,0 +1,63 @@
+// Place all the styles related to the Documents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.list_view .attr {
+    float: left;
+}
+.list_view .document_preview {
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.list_view .labels {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #666666;
+}
+.list_view .label {
+    float: left;
+    font-weight: bold;
+}
+.list_view .name {
+    width: 200px;
+}
+.list_view .type {
+    width: 100px;
+}
+.list_view .timestamp {
+    width: 200px;
+}
+.list_view .tags {
+    width: 300px;
+}
+.left_nav .year {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.left_nav .month {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.left_nav .selected {
+    background-color: #cccccc;
+}
+.left_nav .month.selected {
+    background-color: #aaaaaa;
+}
+#doc_show .left_meta {
+    width: 200px;
+    float: left;
+}
+.left_meta .name {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.left_meta .timestamp, .left_meta .tags {
+    padding-bottom: 10px;
+}
+.photo_information .exif_attr {
+    padding-bottom: 3px;
+}
+.photo_information .label {
+    font-weight: bold;
+}
