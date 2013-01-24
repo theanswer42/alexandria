@@ -1,0 +1,13 @@
+development: &development
+  access_key_id: AKIAI2PAMNIYC4KCFX2Q
+  secret_access_key: <%= File.read('/etc/alexandria_aws_secret_key').strip %>
+  glacier_endpoint: glacier.us-west-2.amazonaws.com
+  simple_db_consistent_reads: false
+
+test:
+  <<: *development
+  simple_db_consistent_reads: true
+
+production:
+  <<: *development
+  simple_db_consistent_reads: true

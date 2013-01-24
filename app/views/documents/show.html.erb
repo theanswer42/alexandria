@@ -2,6 +2,10 @@
     <%= render :partial => 'left_meta', :locals => {:document => @document} %>
     
     <div class='document' class='page_middle'>
-        There will be a preview here.
+        <% if @document.is_a?(Photo) %>
+        <%= image_tag("/photos/#{@document.filename}", :width => "700px", :alt => @document.name) %>
+        <% else %>
+            Document view for type <%= @document.class.name %> not yet available.
+        <% end %>
     </div>
 </div>

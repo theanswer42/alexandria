@@ -51,3 +51,5 @@ gem 'thin'
 
 gem 'will_paginate'
 
+# Amazon AWS SDK
+gem 'aws-sdk'
