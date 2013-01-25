@@ -24,51 +24,6 @@ class Document < ActiveRecord::Base
     timestamp = File.mtime(path)
   end
   
-  # part_size defines how big is the multi-part chunk size.
-  #  nil - not multipart. only compute the root
-  #  integer - size in MB
-  # 
-  # returns: 
-  #  {:root => root_hash_value, :
-  MAX_PART_SIZE = 4.gigabytes
-  def parts_for_transport(part_size = MAX_PART_SIZE)
-    file = File.open(library_path, 'rb')
-    parts = []
-    while(data = file.read(1.megabyte))
-      sha256sum = Digest::SHA256.new
-      sha256sum << data
-      parts << {:data => data, :checksum => sha256sum.to_s}
-    end
-
-    current_part_size = 1.megabyte
-    parts_for_transport = []
-    next_parts = []
-    
-    while true
-      parts_for_transport = parts if current_part_size == part_size
-      break if parts.length == 1      
-
-      index = 0
-      while(!(pair = parts.slice(index,2)).blank?)
-        if pair.size == 1
-          next_parts << pair[0] 
-          next
-        end
-        
-        data = pair[0][:data] + pair[1][:data]
-        sha256sum = Digest::SHA256.new
-        sha256sum << pair[0][:checksum] + pair[1][:checksum]
-        next_parts << {:data => data, :checksum => sha256sum.to_s}
-      end
-      
-      parts = next_parts
-      next_parts = []
-      current_part_size = current_part_size * 2
-    end
-
-    {:tree_hash => parts.first[:checksum], :parts_for_transport => parts_for_transport}
-  end
-
   def self.import!(path, tags, options)
     result = options[:result]
 
