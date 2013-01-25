@@ -9,11 +9,11 @@ class AWS::Glacier::Client
   #  {:root => root_hash_value, :
   MAX_PART_SIZE = 4.gigabytes
   MAX_UPLOAD_SIZE = 8.megabytes
-  def self.upload(options={})
+  def upload(options={})
     vault_name = options[:vault_name]
     path = options[:path]
     sha256sum = options[:checksum]
-
+    parts_for_transport = []
     # We'll skip any file bigger than 8 megs until we support multipart uploads
     raise "File #{path} too big (for now)" if File.size(path) >= MAX_UPLOAD_SIZE
 
@@ -29,9 +29,9 @@ class AWS::Glacier::Client
       # this will do the multipart upload
       raise "File #{path} too big (for now)"
     else
-      response = upload_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:linear_hash], :body => File.open(path, 'rb'), :content_sha256 => file_hashes[:tree_hash])
+      response = upload_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :body => File.open(path, 'rb'))
       raise "No archive-id returned!" unless response.archive_id
-      raise "checksum sent back does not match!" unless response.checksum == file_hashes[:linear_hash]
+      raise "checksum sent back does not match!" unless response.checksum == file_hashes[:tree_hash]
       
       return response.archive_id
     end
@@ -51,7 +51,7 @@ class AWS::Glacier::Client
       
       sha256sum = Digest::SHA256.new
       sha256sum << data
-      parts << sha256sum.to_s
+      parts << sha256sum
     end
     
     current_part_size = 1.megabyte
@@ -70,9 +70,9 @@ class AWS::Glacier::Client
         end
         
         sha256sum = Digest::SHA256.new
-        sha256sum << pair[0]
-        sha256sum << pair[1]
-        next_parts << sha256sum.to_s
+        sha256sum << pair[0].digest
+        sha256sum << pair[1].digest
+        next_parts << sha256sum
         index += 2
       end
       
@@ -80,7 +80,7 @@ class AWS::Glacier::Client
       next_parts = []
       current_part_size = current_part_size * 2
     end
-    {:linear_hash => linear_hash.to_s, :tree_hash => parts.first, :hashes_for_transport => parts_for_transport}
+    {:linear_hash => linear_hash.to_s, :tree_hash => parts.first.to_s, :hashes_for_transport => parts_for_transport}
   end
 
 

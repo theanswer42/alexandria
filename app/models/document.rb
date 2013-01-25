@@ -4,7 +4,7 @@ class Document < ActiveRecord::Base
   validates :filename, :checksum, :timestamp, :presence => true
   validates :checksum, :uniqueness => true
   
-  attr_accessible :filename, :thumbnail, :checksum, :name, :description, :timestamp, :imported_at
+  attr_accessible :filename, :thumbnail, :checksum, :name, :description, :timestamp, :imported_at, :archived_at, :archive_id
   
   def self.available_years
     self.select("distinct year(timestamp) as year_timestamp").collect {|d| d.year_timestamp }
