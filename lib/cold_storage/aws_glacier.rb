@@ -7,7 +7,7 @@ module ColdStorage
         glacier.client
       end
 
-      def batch_archive!(batch_size=50)
+      def batch_archive!(batch_size=1000)
         documents = Document.where(:archived_at => nil).limit(batch_size).all
         Rails.logger.info "ColdStorage::AwsGlacier - Starting batch archive for #{documents.size} documents."
         Rails.logger.info "ColdStorage::AwsGlacier - Creating necessary vaults."
