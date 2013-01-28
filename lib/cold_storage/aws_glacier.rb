@@ -40,7 +40,7 @@ module ColdStorage
     
     module InstanceMethods
       def archive!(options={})
-        raise "Cannot archive a new document" if self.new_record?
+        return if self.new_record?
         
         client = self.class.glacier_client
 
@@ -48,8 +48,11 @@ module ColdStorage
           client.create_vault(:account_id => '-', :vault_name => vault_name)
         end
         begin
-          archive_id = client.upload(:vault_name => vault_name, :path => library_filename, :checksum => checksum)
-          update_attributes!(:archive_id => archive_id, :archived_at => Time.now)
+          bm = Benchmark.measure do
+            archive_id = client.upload(:vault_name => vault_name, :path => library_filename, :checksum => checksum)
+            update_attributes!(:archive_id => archive_id, :archived_at => Time.now)
+          end
+          Rails.logger.info "document: #{self.filename} archived in #{bm.real} seconds."
         rescue Exception => e
           Rails.logger.error "Exception while uploading archive: #{e.inspect}"
         end

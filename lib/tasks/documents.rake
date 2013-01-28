@@ -1,4 +1,10 @@
 namespace :documents do 
+  task :batch_archive => [:environment] do 
+    puts "Starting import"
+    Document.batch_archive!
+    puts "Done"
+  end
+
   task :migrate_checksum => [:environment] do 
     puts "Starting upgrade of checksums to sha256"
     total = 0
