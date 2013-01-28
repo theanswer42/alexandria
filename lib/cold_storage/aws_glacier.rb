@@ -23,10 +23,18 @@ module ColdStorage
       
       def create_vaults
         client = self.glacier_client
-        vaults = client.list_vaults(:account_id => '-')
-        vault_list = vaults[:vault_list]
-        vaults_hash = vault_list.each_with_object({}) {|vault, hash| hash[vault[:vault_name]] = vault }
-        
+        vaults_hash = {}
+        marker = nil
+        while true
+          vl_params = {:account_id => '-'}
+          vl_params[:marker] = marker if marker
+          vaults = client.list_vaults(vl_params)
+          sleep 2
+          break if vaults[:marker].blank?
+          vaults[:vault_list].each {|vault| vaults_hash[vault[:vault_name]] = vault }
+          marker = vaults[:marker]
+        end
+
         self.connection.execute("select distinct date_format(timestamp, '%Y_%m') 'month' from documents").each do |row|
           vault_name = "#{Rails.env.downcase}_#{row[0]}"
           if !vaults_hash[vault_name]

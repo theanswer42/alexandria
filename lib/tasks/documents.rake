@@ -1,6 +1,6 @@
 namespace :documents do 
   task :batch_archive => [:environment] do 
-    puts "Starting import"
+    puts "Starting archive"
     Document.batch_archive!
     puts "Done"
   end
