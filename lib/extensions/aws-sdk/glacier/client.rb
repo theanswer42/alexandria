@@ -84,7 +84,7 @@ class AWS::Glacier::Client
       while(!(pair = parts.slice(index,2)).blank?)
         if pair.size == 1
           next_parts << pair[0] 
-          next
+          break
         end
         
         sha256sum = Digest::SHA256.new
