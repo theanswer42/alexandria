@@ -40,6 +40,7 @@ module ColdStorage
           if !vaults_hash[vault_name]
             Rails.logger.info "Creating vault #{vault_name}"
             client.create_vault(:account_id => '-', :vault_name => vault_name)
+            sleep 2
           end
         end
       end
@@ -57,12 +58,12 @@ module ColdStorage
         end
         begin
           bm = Benchmark.measure do
-            archive_id = client.upload(:vault_name => vault_name, :path => library_filename, :checksum => checksum)
+            archive_id = client.upload(:vault_name => vault_name, :path => library_filename, :checksum => checksum, :archive_description => self.id.to_s)
             update_attributes!(:archive_id => archive_id, :archived_at => Time.now)
           end
           Rails.logger.info "document: #{self.filename} archived in #{bm.real} seconds."
         rescue Exception => e
-          Rails.logger.error "Exception while uploading archive: #{e.inspect}"
+          Rails.logger.error "Exception while uploading archive for #{filename}: #{e.inspect}"
         end
       end
 
