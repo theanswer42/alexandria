@@ -13,9 +13,11 @@ class AWS::Glacier::Client
     vault_name = options[:vault_name]
     path = options[:path]
     sha256sum = options[:checksum]
+    description = options[:archive_description]
     parts_for_transport = []
     # We'll skip any file bigger than 8 megs until we support multipart uploads
     raise "File #{path} too big (for now)" if File.size(path) >= MAX_UPLOAD_SIZE
+    raise "File #{path} size is zero" if File.size(path)==0
 
     # for now, we'll only support simple uploads
     file_hashes = compute_hashes(path)
@@ -38,7 +40,7 @@ class AWS::Glacier::Client
       # archive_id = upload_multipart_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :path => path)
       # return archive_id
     else
-      response = upload_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :body => File.open(path, 'rb'))
+      response = upload_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :body => File.open(path, 'rb'), :archive_description => description)
       raise "No archive-id returned!  #{response.inspect}" unless response.archive_id
       raise "checksum sent back does not match!" unless response.checksum == file_hashes[:tree_hash]
       return response.archive_id
@@ -60,6 +62,7 @@ class AWS::Glacier::Client
   # computes a linear and tree hash for the given file
   # will only load one meg of the file at a time.
   def compute_hashes(path, part_size = MAX_PART_SIZE)
+    raise "Cannot process empty file!" if File.size(path)==0
     file = File.open(path, 'rb')
     linear_hash = Digest::SHA256.new
     
