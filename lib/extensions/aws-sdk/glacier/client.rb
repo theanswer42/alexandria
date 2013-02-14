@@ -14,31 +14,19 @@ class AWS::Glacier::Client
     path = options[:path]
     sha256sum = options[:checksum]
     description = options[:archive_description]
-    parts_for_transport = []
-    # We'll skip any file bigger than 8 megs until we support multipart uploads
-    raise "File #{path} too big (for now)" if File.size(path) >= MAX_UPLOAD_SIZE
+    part_size = options[:part_size] || MAX_PART_SIZE
+    
     raise "File #{path} size is zero" if File.size(path)==0
 
     # for now, we'll only support simple uploads
-    file_hashes = compute_hashes(path)
+    file_hashes = compute_hashes(path, part_size)
     
     if file_hashes[:linear_hash] != sha256sum
       raise "checksum mismatch on #{path}"
     end
     
-    if parts_for_transport.length > 1
-      raise "Cannot upload #{path}. Multipart uploads not yet supported."
-      # response = initiate_multipart_upload(:account_id => '-', :vault_name => vault_name, :part_size => MAX_UPLOAD_SIZE)
-      # multipart_upload_id = response.multipart_upload_id
-      
-      # raise "No multipart upload id returned! #{response.inspect}"
-      
-      # file_parts_for_upload(path) do |data, index|
-        
-      # end
-      
-      # archive_id = upload_multipart_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :path => path)
-      # return archive_id
+    if file_hashes[:hashes_for_transport].length > 1
+      return multipart_upload(options.merge(:file_hashes => file_hashes))
     else
       response = upload_archive(:account_id => '-', :vault_name => vault_name, :checksum => file_hashes[:tree_hash], :body => File.open(path, 'rb'), :archive_description => description)
       raise "No archive-id returned!  #{response.inspect}" unless response.archive_id
@@ -48,20 +36,47 @@ class AWS::Glacier::Client
   end
   
   private
+  def multipart_upload(options={})
+    vault_name = options[:vault_name]
+    path = options[:path]
+    description = options[:archive_description]
+    file_hashes = options[:file_hashes]
+    part_hashes = file_hashes[:hashes_for_transport]
+    part_size = options[:part_size]
+    
+    response = initiate_multipart_upload(:account_id => '-', :vault_name => vault_name, :archive_description => description, :part_size => part_size)
+    upload_id = response.upload_id
+    
+    file_parts_for_upload(path, part_size) do |index, io, range|
+      tree_hash = part_hashes[index].to_s
+      response = upload_multipart_part(:account_id => '-', :vault_name => vault_name, :upload_id => upload_id, :checksum => tree_hash, :range => range, :body => io)
+      raise "Hash mismatch for part: #{index}" unless tree_hash == response.checksum
+    end
 
-  def file_parts_for_upload(path, part_size=MAX_PART_SIZE)
+    response = complete_multipart_upload(:account_id => '-', :vault_name => vault_name, :upload_id => upload_id, :archive_size => File.size(path), :checksum => file_hashes[:tree_hash])
+    
+    return response.archive_id
+  end
+
+
+  def file_parts_for_upload(path, part_size)
     file = File.open(path, 'rb')
     index = 0
+    range_start = 0
+    file_size = File.size(path)
     while(data = file.read(part_size))
-      yield(data, index)
+      size = [part_size, data.size].min
+      range_end = range_start + size - 1
+      range = "bytes #{range_start}-#{range_end}/#{file_size-1}"
+      yield(index, StringIO.new(data), range)
+      range_start += part_size
       index += 1
     end
   end
 
-
   # computes a linear and tree hash for the given file
   # will only load one meg of the file at a time.
-  def compute_hashes(path, part_size = MAX_PART_SIZE)
+  def compute_hashes(path, part_size)
     raise "Cannot process empty file!" if File.size(path)==0
     file = File.open(path, 'rb')
     linear_hash = Digest::SHA256.new
