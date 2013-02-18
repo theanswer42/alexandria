@@ -3,7 +3,7 @@
     
     <div class='document' class='page_middle'>
         <% if @document.is_a?(Photo) %>
-        <%= image_tag("/photos/#{@document.filename}", :width => "700px", :alt => @document.name) %>
+        <%= image_tag("/library/#{@document.filename}", :width => "700px", :alt => @document.name) %>
         <% else %>
             Document view for type <%= @document.class.name %> not yet available.
         <% end %>
