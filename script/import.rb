@@ -1,8 +1,8 @@
 path = ARGV[0]
 tags = ARGV[1..-1] || []
 
-# puts path.inspect
-# puts tags.inspect
+puts "Importing path: #{path} with tags: #{tags.inspect}"
 
 result = Document.import_file(path, tags)
-puts result.inspect
+
+puts "Done. #{result.inspect}."
