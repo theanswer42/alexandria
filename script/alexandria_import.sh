@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. /usr/local/share/alexandria/alexandria.sh
+
 path=`pwd`/$1
 shift
 tags=$* 

@@ -1,5 +1,5 @@
-require_dependency 'lib/cold_storage/aws_glacier.rb'
-require_dependency 'lib/extensions/aws-sdk/glacier/client.rb'
+require_dependency './lib/cold_storage/aws_glacier.rb'
+require_dependency './lib/extensions/aws-sdk/glacier/client.rb'
 
 config = YAML.load_file(Rails.root.join('config', 'alexandria.yml'))
 if Rails.env.test?
