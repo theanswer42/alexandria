@@ -2,7 +2,12 @@
 
 . /usr/local/share/alexandria/alexandria.sh
 
-path=`pwd`/$1
+if [[ $1 =~ ^\/ ]]
+then
+    path=$1
+else
+    path=`pwd`/$1
+fi
 shift
 tags=$* 
 
