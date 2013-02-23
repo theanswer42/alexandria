@@ -41,7 +41,7 @@ do
 	    exit 0
 	    ;;
 	t)
-	    TAGS="${TAGS} \"${OPTARG}\""
+	    TAGS="${TAGS} ${OPTARG}"
 	    ;;
 	m)
 	    if test ${OPTARG} == "scan"
