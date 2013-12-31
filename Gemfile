@@ -35,7 +35,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+gem 'byebug'
 
 # EXIF
 gem 'exifr', :require => 'exifr'
